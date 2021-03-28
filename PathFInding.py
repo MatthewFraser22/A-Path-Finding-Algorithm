@@ -61,7 +61,7 @@ def A_Star(start,end,maze):
 			#reversed the path
 			return path[::-1]
 
-		#generates children : border is set
+		#positions to move
 		for new_pos in [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1)]:
 			#gets the nodes position
 			nodePosition = (current_.position[0] + new_pos[0], current_.position[1] + new_pos[1])
